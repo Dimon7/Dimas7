@@ -1,0 +1,61 @@
+.container {
+	position: relative;
+	width: 390px;
+	background-color: grey;
+	margin: 0 auto;
+	
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.vvid > input{
+	margin: 16px 10px;
+	
+}
+
+.perevod > input{
+	margin-top: 8px;
+}
+.perevod{
+	background-color: #727FA5;
+    /* margin-top: auto; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* text-align: center; */
+    box-shadow: lightslategray;
+    box-sizing: content-box;
+}
+
+.title{
+	background-color: #727FA5;
+    /* margin-top: auto; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* text-align: center; */
+    box-shadow: lightslategray;
+    box-sizing: content-box;
+}
+.title > h4{
+	color: white;
+}
+.vvid{
+	background-color: #fff;
+}
+#click{
+	background-color: #4CAF50;
+    border: 0px;
+    width: 85px;
+    height: 26px;
+    color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.answer{
+	width: 85px;
+    padding: 3px;
+    color: white;
+    /* margin: 3px; */
+    display: inline-block;
+}
