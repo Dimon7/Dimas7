@@ -79,11 +79,13 @@ $('#click').on('mousedown',function(){
        var ret1  = before_coma(before,o);
        var ret2 = after_coma(after,o);
        var str1 = ret1.join("");
-       var str2 = ret2.join("");
+      if (after > 0){ var str2 = ret2.join(""); }
        
        if (after === 0 ) { $('.answer-input').val(str1); }
        else{   $('.answer-input').val(str1+"."+str2);
     }
  
 });	    
+
+	    
 
