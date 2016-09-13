@@ -19,7 +19,7 @@ body, html{
 .vvid > input{
 	background-color: transparent;
     /*width: 100%;*/
-    color: #4CAF50;
+    /*color: #4CAF50;*/
     margin: 14px 0px 16px 5px;
     /*min-height: 100%;*/
     height: 130px;
@@ -31,14 +31,22 @@ body, html{
  
 
 .perevod > input {
+
     font-size: 60px;
     width: 100%;
     /*margin: 16px 0px 16px 5px;*/
     min-height: 100%;
+    color: #4CAF50;
     border: none;
-    color: #000;
+    /*color: #000;*/
     background-color: transparent;
     outline: none;
+}
+.perevod > input::-webkit-input-placeholder { 
+    color: #000; 
+    text-align: center; 
+    font-size: 35px;
+    bottom: 0;
 }
 
 
@@ -185,7 +193,7 @@ body, html{
     text-align: center;
       margin: 0;
       list-style: none;
-      padding-left: 20px;
+      /*padding-left: 20px;*/
       display: none;
       
     }
@@ -205,8 +213,10 @@ body, html{
    
 
     .menu.open ul {
+    background-color: #fff;
         text-align: center;
       display: block;
       z-index: 10;
-      position: fixed;
+      cursor: pointer;
+      
     }

@@ -93,7 +93,7 @@ $('.calc').on('mousedown', function(event){
 	
 	
 	var target = event.target.getAttribute('id');
-	
+
 	switch(target){
 		case "btn-1" : s = s + 1; break;
 		case "btn-2" : s = s + 2; break;
@@ -120,16 +120,17 @@ $('.calc').on('mousedown', function(event){
 	
 
 });
-//  var menuElem = document.getElementById('sweeties');
-//     var titleElem = menuElem.querySelector('.title');
-
-// $('.menu').on('mousedown', function(event){
-//     var target = event.currentTarget;
-//       // $(menuElem).removeClass();	
+ var menuElem = document.getElementById('sweeties');
+ var titleElem = menuElem.querySelector('.title');
+ var osn = document.getElementById('osnova');
+$('.menu').on('mousedown', function(event){
+    var target = event.currentTarget;
+    
+    	console.log(target.children);
+       target.classList.toggle('open');
+       osn.innerHTML = target.innerHTML;
       
-//        target.classList.toggle('open');
-      
-//       	// var tar = event.target.getAttribute('class');
-      	
+      	// var tar = event.target.getAttribute('class');
+      return target;	
 
-//     });  
+    });  
