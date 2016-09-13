@@ -1,16 +1,38 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
 .container {
 	position: relative;
-	width: 390px;
+	width: 100%;
 	background-color: grey;
-	margin: 0 auto;
 	
+	min-height: 100%;
 	text-align: center;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .vvid > input{
-	margin: 16px 10px;
 	
+    width: 100%;
+    margin: 16px 0px 16px 5px;
+    min-height: 100%;
+    border: none;
+    outline: none;
+	
+}
+ 
+.perevod > input {
+    width: 100%;
+    margin: 16px 0px 16px 5px;
+    min-height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
 }
 
 .perevod > input{
@@ -32,6 +54,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     /* text-align: center; */
+    width: 100%;
     box-shadow: lightslategray;
     box-sizing: content-box;
 }
@@ -58,4 +81,39 @@
     color: white;
     /* margin: 3px; */
     display: inline-block;
+}
+
+
+
+.first-row > div {
+    display : inline;
+}
+
+.second-row > div {
+    display : inline;
+}
+
+.third-row > div {
+    display : inline;
+}
+
+.four-row > div {
+    display : inline;
+}
+
+.div-btn > button{
+    width: 100px;
+    margin : 10px;
+    height: 100px;
+}
+
+.calc{
+    float : left;
+}
+
+.div-btn > #btn-c {
+    
+    width: 220px;
+    height: 100px;
+    
 }

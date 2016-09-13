@@ -87,5 +87,31 @@ $('#click').on('mousedown',function(){
  
 });	    
 
-	    
+var s="";
+
+$('.calc').on('mousedown', function(event){
+	
+	
+	var target = event.target.getAttribute('id');
+
+	switch(target){
+		case "btn-1" : s = s + 1; break;
+		case "btn-2" : s = s + 2; break;
+		case "btn-3" : s = s + 3; break;
+		case "btn-4" : s = s + 4; break;
+		case "btn-5" : s = s + 5; break;
+		case "btn-6" : s = s + 6; break;
+		case "btn-7" : s = s + 7; break;
+		case "btn-8" : s = s + 8; break;
+		case "btn-9" : s = s + 9; break;
+		case "btn-0" : s = s + 0; break;
+		case "btn-c" : s = ""; break;
+		default : break;
+
+	}
+	// var  = target.getAttribute('data-toggle-id');
+
+	$('.val').val(s);
+
+});
 
