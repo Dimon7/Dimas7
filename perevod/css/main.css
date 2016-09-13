@@ -19,7 +19,7 @@ body, html{
 .vvid > input{
 	
     width: 100%;
-    margin: 0px 0px 16px 5px;
+    margin: 14px 0px 16px 5px;
     min-height: 100%;
     border: none;
     outline: none;
@@ -29,21 +29,19 @@ body, html{
 
 .perevod > input {
     width: 100%;
-    margin: 16px 0px 16px 5px;
+    /*margin: 16px 0px 16px 5px;*/
     min-height: 100%;
     border: none;
     background-color: transparent;
     outline: none;
 }
 
-.perevod > input{
-	margin-top: 8px;
-}
+
 .perevod{
-    height: 60px;
+    /*height: 60px;*/
 	background-color: #727FA5;
     /* margin-top: auto; */
-    padding-top: 10px;
+    
     padding-bottom: 10px;
     /* text-align: center; */
     box-shadow: lightslategray;
@@ -57,20 +55,20 @@ body, html{
     padding-bottom: 10px;
     /* text-align: center; */
     width: 100%;
-    height: 100px;
+    height: 50px;
     box-shadow: lightslategray;
     box-sizing: content-box;
 }
 .title > h4{
 	    color: white;
     margin-left: 10px;
-    margin-top: 40px;
+    margin-top: 0px;
     font-size: -webkit-xxx-large;
     margin-right: 0px;
 }
 .vvid{
 	background-color: #fff;
-    height: 60px;
+    /*sheight: 60px;*/
 }
 #click{
 	background-color: #4CAF50;
@@ -94,21 +92,11 @@ body, html{
 
 
 
-.first-row > div {
-    display : inline;
+#row
+ {
+    display : flex;
 }
 
-.second-row > div {
-    display : inline;
-}
-
-.third-row > div {
-    display : inline;
-}
-
-.four-row > div {
-    display : inline;
-}
 
 .div-btn > button{
     width: 100px;
@@ -117,20 +105,19 @@ body, html{
 }
 
 .calc{
-    /*float : left;*/
+    
     max-width: 1280px;
-    margin: 0px auto 0;
-    padding: 20px 40px;
+    margin: auto;
+    /*padding: 20px 40px;*/
     background: #aaa;
-
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    text-align: center;
 }
 .div-btn>button
 {
+    font-size: 45px;
+    font-weight: bold;
     background: #f5d781;
-    width: 140px;
+    width: 200px;
     height: 140px;
     border: 5px solid #30c;
     color: white;
@@ -141,7 +128,50 @@ body, html{
 
 .div-btn > #btn-c {
     
-    width: 220px;
-    height: 100px;
+    width: 420px;
+    height: 140px;
     
 }
+
+#btn-point, #btn-clear{
+    position: absolute;
+}
+  #btn-eq{
+    position : absolute;  
+
+    height: 320px;
+}
+
+/*******************************************/
+.menu{
+    text-align: center;
+}
+  .menu ul {
+    text-align: center;
+      margin: 0;
+      list-style: none;
+      padding-left: 20px;
+      display: none;
+      
+    }
+
+    .menu .title {
+        text-align: center;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .menu .title::before {
+      text-align: center;  
+      font-size: 80%;
+      color: green;
+    }
+
+   
+
+    .menu.open ul {
+        text-align: center;
+      display: block;
+      z-index: 10;
+      position: fixed;
+    }

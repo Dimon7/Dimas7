@@ -67,10 +67,10 @@ if (o>10) {
 };
 
 
-$('#click').on('mousedown',function(){
+function Perevod(){
         var val =  parseFloat($('.val').val());
-        var o =  parseInt($('.osnova').val());
-        
+        // var o =  parseInt($('.osnova').val());
+        var o = 2;
 
         var after = val % 1;
         var before = val - after;
@@ -79,16 +79,16 @@ $('#click').on('mousedown',function(){
        var ret1  = before_coma(before,o);
        var ret2 = after_coma(after,o);
        var str1 = ret1.join("");
-      if (after > 0){ var str2 = ret2.join(""); }
+       if (after > 0){ var str2 = ret2.join(""); }
        
        if (after === 0 ) { $('.answer-input').val(str1); }
        else{   $('.answer-input').val(str1+"."+str2);
     }
  
-});	    
+};	    
 
 var s="";
-
+var eq="";
 $('.calc').on('mousedown', function(event){
 	
 	
@@ -105,6 +105,9 @@ $('.calc').on('mousedown', function(event){
 		case "btn-8" : s = s + 8; break;
 		case "btn-9" : s = s + 9; break;
 		case "btn-0" : s = s + 0; break;
+		case "btn-point" : s = s + '.'; break;
+		case "btn-clear" :s=s.substring(0, s.length - 1); break;
+		case "btn-eq" : Perevod(); break;
 		case "btn-c" : s = ""; break;
 		default : break;
 
@@ -112,6 +115,20 @@ $('.calc').on('mousedown', function(event){
 	// var  = target.getAttribute('data-toggle-id');
 
 	$('.val').val(s);
+	
+	
 
 });
+ var menuElem = document.getElementById('sweeties');
+    var titleElem = menuElem.querySelector('.title');
 
+$('.menu').on('mousedown', function(event){
+    var target = event.currentTarget;
+      // $(menuElem).removeClass();	
+      
+       target.classList.toggle('open');
+      
+      	// var tar = event.target.getAttribute('class');
+      	
+
+    });  
