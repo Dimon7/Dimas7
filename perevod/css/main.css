@@ -11,21 +11,22 @@ body, html{
 	width: 100%;
 	background-color: grey;
 	
-	min-height: 100%;
-	text-align: center;
+	height: 100%;
+	
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .vvid > input{
 	
     width: 100%;
-    margin: 16px 0px 16px 5px;
+    margin: 0px 0px 16px 5px;
     min-height: 100%;
     border: none;
     outline: none;
 	
 }
  
+
 .perevod > input {
     width: 100%;
     margin: 16px 0px 16px 5px;
@@ -39,6 +40,7 @@ body, html{
 	margin-top: 8px;
 }
 .perevod{
+    height: 60px;
 	background-color: #727FA5;
     /* margin-top: auto; */
     padding-top: 10px;
@@ -49,20 +51,26 @@ body, html{
 }
 
 .title{
-	background-color: #727FA5;
+	    background-color: #727FA5;
     /* margin-top: auto; */
     padding-top: 10px;
     padding-bottom: 10px;
     /* text-align: center; */
     width: 100%;
+    height: 100px;
     box-shadow: lightslategray;
     box-sizing: content-box;
 }
 .title > h4{
-	color: white;
+	    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+    font-size: -webkit-xxx-large;
+    margin-right: 0px;
 }
 .vvid{
 	background-color: #fff;
+    height: 60px;
 }
 #click{
 	background-color: #4CAF50;
@@ -79,6 +87,7 @@ body, html{
 	width: 85px;
     padding: 3px;
     color: white;
+
     /* margin: 3px; */
     display: inline-block;
 }
@@ -108,7 +117,26 @@ body, html{
 }
 
 .calc{
-    float : left;
+    /*float : left;*/
+    max-width: 1280px;
+    margin: 0px auto 0;
+    padding: 20px 40px;
+    background: #aaa;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.div-btn>button
+{
+    background: #f5d781;
+    width: 140px;
+    height: 140px;
+    border: 5px solid #30c;
+    color: white;
+    padding: 20px;
+    margin: 20px 10px;
+    box-sizing: border-box;
 }
 
 .div-btn > #btn-c {
