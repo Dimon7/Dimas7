@@ -60,10 +60,10 @@ if (o>10) {
     for (var j = 0; j < i; j++) {
 			mas2[j] = bukva(mas2[j]);
     }
-
+}
 
     return mas2;
-}
+
 };
 
 
@@ -93,7 +93,7 @@ $('.calc').on('mousedown', function(event){
 	
 	
 	var target = event.target.getAttribute('id');
-
+	
 	switch(target){
 		case "btn-1" : s = s + 1; break;
 		case "btn-2" : s = s + 2; break;
@@ -106,9 +106,10 @@ $('.calc').on('mousedown', function(event){
 		case "btn-9" : s = s + 9; break;
 		case "btn-0" : s = s + 0; break;
 		case "btn-point" : s = s + '.'; break;
-		case "btn-clear" :s=s.substring(0, s.length - 1); break;
+		case "btn-clear" : s=s.substring(0, s.length - 1); break;
 		case "btn-eq" : Perevod(); break;
-		case "btn-c" : s = ""; break;
+		case "btn-c" : s = "";
+		$('.answer-input').val(""); break;
 		default : break;
 
 	}
@@ -119,16 +120,16 @@ $('.calc').on('mousedown', function(event){
 	
 
 });
- var menuElem = document.getElementById('sweeties');
-    var titleElem = menuElem.querySelector('.title');
+//  var menuElem = document.getElementById('sweeties');
+//     var titleElem = menuElem.querySelector('.title');
 
-$('.menu').on('mousedown', function(event){
-    var target = event.currentTarget;
-      // $(menuElem).removeClass();	
+// $('.menu').on('mousedown', function(event){
+//     var target = event.currentTarget;
+//       // $(menuElem).removeClass();	
       
-       target.classList.toggle('open');
+//        target.classList.toggle('open');
       
-      	// var tar = event.target.getAttribute('class');
+//       	// var tar = event.target.getAttribute('class');
       	
 
-    });  
+//     });  
